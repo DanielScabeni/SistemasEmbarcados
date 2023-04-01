@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
 	<title>Piscar letra por letra</title>
 	<style>
 		@keyframes blink {
@@ -13,8 +10,6 @@
 			animation: blink 0.3s infinite;
 		}
 	</style>
-</head>
-<body>
 	<div id="texto">
 		<span class="blink">S</span>
 		<span class="blink">I</span>
@@ -44,5 +39,3 @@
 			spans[i].style.animationDelay = (i * delay) + 'ms';
 		}
 	</script>
-</body>
-</html>
