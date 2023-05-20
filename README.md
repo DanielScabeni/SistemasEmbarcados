@@ -6,8 +6,8 @@
 <table>
   <tr>
     <td width="50%">
-      <a href="https://github.com/DanielScabeni/DAW-2022">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=DanielScabeni&repo=DAW-2022&theme=chartreuse-dark" alt="Readme Card">
+      <a href="https://github.com/DanielScabeni/SistemasEmbarcados">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=DanielScabeni&repo=SistemasEmbarcados&theme=chartreuse-dark" alt="Readme Card">
       </a>
     </td>
     <td width="50%">
