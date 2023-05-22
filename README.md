@@ -9,7 +9,7 @@
     </td>
     <td width="50%">
   </a>
-    <p style="color: white;">Este é o repositorio utilizado em projetos desenvolvidos na matéria de Sistemas Embarcados do curso de Sistemas de Informações da Universidade MaterDei (UNIMATER), ministrada pelo professor Dr. Rafael babosa</p>
+    <p style="color: white;">Este é o PRINCIPAL repositorio onde será separado por PASTAS, os projetos desenvolvidos na matéria de Sistemas Embarcados do curso de Sistemas de Informações da Universidade MaterDei (UNIMATER), ministrada pelo professor Dr. Rafael babosa</p>
     </td>
   </tr>
 </table>
