@@ -1,4 +1,8 @@
-# Repositório da matéria de Sistemas Embarcados
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/DanielScabeni/SistemasEmbarcados/master/title.svg" alt="title" />
+</h1>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <table>
   <tr>
@@ -13,6 +17,8 @@
     </td>
   </tr>
 </table>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 | [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DanielScabeni&show_icons=true&card_width=300&theme=chartreuse-dark)](https://github.com/DanielScabeni) | [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DanielScabeni&show_icons=true&card_width=130&theme=dark#gh-dark-mode-only)](https://github.com/DanielScabeni) |
 | --- | --- |
