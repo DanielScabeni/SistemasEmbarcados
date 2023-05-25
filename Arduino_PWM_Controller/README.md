@@ -13,7 +13,7 @@
     </td>
     <td width="50%">
   </a>
-    <p style="color: white;">Trabalho sobre PWM (Pulsate Width Modulator, solicitado pelo professor Dr. Rafael babosa, para a materia de Sistemas Embarcados do curso de Sistemas de Informações da Universidade MaterDei (UNIMATER)</p>
+    <p style="color: white;">Trabalho sobre PWM (Pulsate Width Modulator), solicitado pelo professor Dr. Rafael babosa, para a materia de Sistemas Embarcados do curso de Sistemas de Informações da Universidade MaterDei (UNIMATER)</p>
     </td>
   </tr>
 </table>
