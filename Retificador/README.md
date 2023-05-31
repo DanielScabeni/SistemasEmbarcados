@@ -7,41 +7,53 @@
 <table>
   <tr>
     <td width="50%">
-      <a href="https://github.com/DanielScabeni/SistemasEmbarcados/tree/main/Arduino_PWM_Controller">
+      <a href="https://github.com/DanielScabeni/SistemasEmbarcados/tree/main/Retificador">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=DanielScabeni&repo=SistemasEmbarcados&theme=chartreuse-dark" alt="Readme Card">
       </a>
     </td>
     <td width="50%">
   </a>
-    <p style="color: white;">Trabalho sobre PWM (Pulse Width Modulator), solicitado pelo professor Dr. Rafael babosa, para a materia de Sistemas Embarcados do curso de Sistemas de Informações da Universidade MaterDei (UNIMATER)</p>
+    <p style="color: white;">Trabalho sobre Retificador, solicitado pelo professor Dr. Rafael babosa, para a materia de Sistemas Embarcados do curso de Sistemas de Informações da Universidade MaterDei (UNIMATER)</p>
     </td>
   </tr>
 </table>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-# O que é o PWM ?
+# O que é um Retificador ?
 
-- PWM significa "Pulse Width Modulation" (Modulação por Largura de Pulso, em português). É uma técnica amplamente utilizada para controlar a quantidade de energia fornecida a dispositivos eletrônicos, como motores, LEDs e circuitos de áudio.
+- Um retificador é um dispositivo eletrônico utilizado para converter corrente alternada (AC) em corrente contínua (DC). Ele realiza essa conversão através de diodos retificadores, que permitem a passagem de corrente em apenas uma direção.
 
-- O PWM envolve o envio de pulsos elétricos com uma largura variável, onde a relação entre o tempo em que o pulso está em nível alto (ligado) e o tempo em que está em nível baixo (desligado) determina a quantidade média de energia fornecida ao dispositivo. Isso permite controlar a intensidade de um LED, a velocidade de um motor ou o volume de um alto-falante, por exemplo.
+- Existem diferentes tipos de retificadores, os mais comuns são o retificador de meia onda e o retificador de onda completa. O retificador de meia onda utiliza um único diodo para retificar apenas metade do ciclo da corrente alternada, e o retificador de onda completa utiliza dois diodos para retificar ambos os semiciclos da corrente alternada.
 
-# Componentes Utilizados
+# A ponte de diodos 
 
-<h3>
-  - Microcontrolador: Arduino Nano
-</h3>
-- O Arduino Nano é uma placa de desenvolvimento baseada em microcontrolador que oferece uma plataforma flexível e de baixo custo para criar projetos eletrônicos.
+- Uma ponte de diodos é um circuito eletrônico que utiliza quatro diodos retificadores para converter corrente alternada (AC) em corrente contínua (DC).
 
-<h3>
-- Fonte 5V:
-  </h3>
--Uma fonte de alimentação de 5V fornece uma tensão constante de 5 volts para alimentar os componentes do circuito. No caso do Arduino Nano, é comum utilizar uma fonte de alimentação externa de 5V para fornecer energia à placa e aos componentes conectados a ela.
+- É uma das configurações mais comuns e eficientes para a retificação de corrente alternada, permitindo obter uma retificação de onda completa. Ela é amplamente utilizada em diversas aplicações que requerem a conversão de AC para DC, como fontes de alimentação, carregadores de bateria, inversores de frequência, entre outros.
 
-<h3>
-- Botão:
-</h3>
-  -Um botão é um dispositivo de entrada simples que pode ser pressionado para enviar um sinal ao Arduino. O Arduino pode detectar esse sinal e executar ações específicas com base nessa entrada, como acionar um motor ou alterar o estado de um LED.
+- A ponte de diodos consiste em quatro diodos retificadores (geralmente diodos de junção PN) conectados em uma configuração específica. Dois diodos são dispostos em série com a polaridade reversa, formando um lado da ponte, e os outros dois diodos são dispostos em série com a polaridade direta, formando o outro lado da ponte. Os pontos de junção dos diodos formam os terminais de saída da ponte, onde é obtida a corrente contínua retificada.
+
+Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configuração em ponte permite que a corrente seja retificada em ambos os semiciclos da onda, resultando em uma corrente contínua de polaridade constante na saída.
+
+- A ponte de diodos oferece diversas vantagens, como uma retificação completa da corrente alternada, maior eficiência em relação a outros tipos de retificadores e facilidade de implementação. Ela se tornou uma solução padrão para retificação de corrente alternada em uma ampla gama de aplicações eletrônicas.
+
+# Schematic do Retificador no Proteus
+
+<div align=center>
+<a href="https://github.com/DanielScabeni">
+<img height="500em" src="./schematics/Proteus1.png">
+</div>
+
+# Componentes 
+
+- O conector macho de duas entradas (J1) é a porta de entrada para a energia elétrica no circuito. Ele permite a conexão direta do transformador ao circuito, fornecendo a energia necessária para o funcionamento dos componentes.
+
+- BR1 (BIRDGR) Na ponte de diodos, os quatro diodos são arranjados em uma estrutura que forma uma ponte, permitindo que a corrente flua em uma direção específica.
+
+- Capacitores C1, C2 e C3, são utilizados para ajudar a manter uma corrente mais constante durante a inversão na ponte de diodos. Eles desempenham um papel importante ao armazenar e liberar cargas elétricas, ajudando a suavizar a tensão e fornecer uma corrente mais estável.
+
+- Regulador de tensão (UI), sua função basicamente é manter a tensão constante, protegendo os dispositivos eletrônicos contra variações de tensão que possam afetar seu desempenho ou causar danos.
 
 <h3>
 - Resistor:
@@ -64,82 +76,5 @@
 <a href="https://github.com/DanielScabeni">
 <img height="500em" src="./schematic/eschemas.png">
 </div>
+
   
-# Codigo Utilizado no projeto
-
-  ```
-  #include <Arduino.h>
-
-
-#define BUTTON_PIN 2 //define as portas
-#define PWM 9 
-
-
-int estado_botao = 0; //variaveis uteis
-int pwm = 0; 
-int ultimo_estado_botao = 0;
-unsigned long tempo_acionado = 0;
-unsigned long tempo_delay = 50;
-
-void setup() {
-  pinMode(PWM, OUTPUT); //seta os pinos
-  pinMode(BUTTON_PIN, INPUT_PULLUP);
-  int var = 64;
-}
-
-void loop() {
-
-  int leitura = digitalRead(BUTTON_PIN); // le o estado do botao na variavel do pino
-
-  if (leitura != ultimo_estado_botao) { //se o estado do botao estiver diferente do estado anterior
-    ultimo_estado_botao = leitura; // atualiza o estado anterior 
-    if (leitura == HIGH) { // se o botao tiver ligado
-      tempo_acionado = millis();// salva o tempo 
-    }
-  }
-
-  if (leitura == HIGH && ((millis() - tempo_acionado) > tempo_delay)) { // se o botao tiver ligado e a diferença entre o tempo atual e o tempo que ele foi pressionado for maior que o delay
-    pwm += 64;
-  }
-
-  if (pwm > 255){ //se o motor ja tiver no seu maximo, resetaa
-    pwm = 0;
-  }
-
-  analogWrite(PWM, pwm); //seta a velocidade definida nas variaveis anteriores
-  delay(50);
-}
-  ```
-  
-# Funcionamento do codigo
-  
-- Esse código em Arduino trata-se de um sistema de controle de velocidade de um motor utilizando um botão como interface. Analise passo a passo:
-
-- No início do código, são definidas as constantes BUTTON_PIN e PWM, que representam as portas utilizadas para o botão e o controle PWM do motor, respectivamente.
-
-- Em seguida, são declaradas as variáveis estado_botao e pwm para armazenar o estado atual do botão e o valor do PWM, respectivamente. Também são declaradas as variáveis ultimo_estado_botao para armazenar o último estado do botão, tempo_acionado para registrar o tempo de acionamento do botão e tempo_delay para definir o tempo de espera entre as alterações de velocidade.
-
-- Na função setup(), as configurações iniciais são feitas. O pino do motor (PWM) é configurado como saída e o pino do botão é configurado como entrada com o resistor de pull-up interno ativado através da função pinMode(BUTTON_PIN, INPUT_PULLUP).
-
-- A função loop() é o loop principal do programa, onde ocorre a leitura do botão e o controle da velocidade do motor.
-
-- A variável leitura armazena o estado atual do botão (HIGH ou LOW) através da função digitalRead(BUTTON_PIN).
-
-- Em seguida, é feita uma verificação se o estado do botão é diferente do último estado registrado (leitura != ultimo_estado_botao). Isso permite detectar quando o botão é pressionado.
-
-- Se o botão foi pressionado (leitura == HIGH), a variável tempo_acionado recebe o valor atual do tempo em milissegundos através da função millis(). Isso marca o tempo de acionamento do botão.
-
-- Em seguida, é feita uma verificação se o botão está pressionado (leitura == HIGH) e se o tempo decorrido desde o acionamento (millis() - tempo_acionado) é maior que o tempo de delay (tempo_delay). Isso garante que a velocidade do motor só será alterada após um determinado intervalo de tempo.
-
-- Se as condições anteriores forem atendidas, a variável pwm é incrementada em 64. Esse valor foi escolhido como exemplo, mas pode ser ajustado conforme necessário.
-
-- A próxima verificação é para limitar a velocidade máxima do motor. Se a variável pwm ultrapassar o valor 255 (limite do PWM), ela é resetada para 0.
-
-- Por fim, a função analogWrite(PWM, pwm) é utilizada para definir a velocidade do motor através da técnica PWM. O valor da variável pwm é passado como parâmetro para controlar a largura do pulso PWM enviado ao pino do motor.
-
-- O programa aguarda um pequeno intervalo de tempo definido pela função delay(50) antes de repetir o loop.
-#
-- Resumindo, esse código permite controlar a velocidade do motor através do botão, onde cada pressionamento aumenta a velocidade em um valor específico. O valor da velocidade é ajustado de forma incremental e limitado ao valor máximo. O uso do PWM (através da função `
-
-
- 
