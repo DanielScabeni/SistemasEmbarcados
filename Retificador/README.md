@@ -64,6 +64,19 @@ Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configu
 # Schemas PCB do circuito
   
 ![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/pcb-Ponte1.png?raw=true)
+
+  # Circuito no TinkerCad
   
-![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/pcbPonte2.png?raw=true)
+![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/RetTink1.png?raw=true)
+
+  # Circuito montado
+
+![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/CircRet1.png?raw=true)
+  
+  # Circuito com um divisor de tansao
+![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/RetTink1.png?raw=true)
+
+  # Implementação na placa montada
+  
+![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/CircRet2.png?raw=true)
   
