@@ -42,7 +42,7 @@ Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configu
 
 <div align=center>
 <a href="https://github.com/DanielScabeni">
-<img height="500em" src="./schematics/Proteus1.png">
+<img src="./schematics/Proteus1.png">
 </div>
 
 # Componentes 
