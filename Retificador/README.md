@@ -55,26 +55,4 @@ Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configu
 
 - Regulador de tensão (UI), sua função basicamente é manter a tensão constante, protegendo os dispositivos eletrônicos contra variações de tensão que possam afetar seu desempenho ou causar danos.
 
-<h3>
-- Resistor:
-</h3>
-  -O resistor é um componente eletrônico usado para limitar ou controlar o fluxo de corrente em um circuito. Ele pode ser usado para proteger componentes sensíveis, ajustar o nível de tensão, dividir a tensão, entre outros propósitos.
-
-<h3>
-- Ponte H:
-</h3>
-  -A ponte H é um circuito que permite controlar a direção e a velocidade de motores DC utilizando sinais PWM do Arduino. Ela recebe os sinais do Arduino e os modula de forma apropriada para transmitir a potência necessária aos componentes, como motores ou LEDs.
-
-<h3>
-- Motor elétrico:
-</h3>
--Um motor elétrico é um dispositivo que converte energia elétrica em energia mecânica. Ele pode ser usado para gerar movimento em um sistema, como em robôs, veículos ou máquinas. O Arduino pode controlar um motor elétrico através da ponte H, ajustando a velocidade e a direção do movimento.
-
-# Schematic do controlador PWM
-
-<div align=center>
-<a href="https://github.com/DanielScabeni">
-<img height="500em" src="./schematic/eschemas.png">
-</div>
-
-  
+- Resistor (R1): é um componente eletrônico que limita o fluxo de corrente em um circuito. Ele desempenha diversas funções, como controlar a intensidade da corrente, ajustar a tensão, dividir a tensão e polarizar transistores.
