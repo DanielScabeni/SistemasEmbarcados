@@ -56,3 +56,14 @@ Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configu
 - Regulador de tensão (UI), sua função basicamente é manter a tensão constante, protegendo os dispositivos eletrônicos contra variações de tensão que possam afetar seu desempenho ou causar danos.
 
 - Resistor (R1): é um componente eletrônico que limita o fluxo de corrente em um circuito. Ele desempenha diversas funções, como controlar a intensidade da corrente, ajustar a tensão, dividir a tensão e polarizar transistores.
+  
+- LED: Um diodo emissor de luz
+  
+- **Dessa maneira.** O conector desempenha o papel de fornecer energia elétrica ao circuito. A ponte de diodo é responsável por transformar a corrente alternada gerada em corrente contínua, garantindo uma fonte de energia estável. Os capacitores são utilizados estrategicamente para manter o LED aceso de forma contínua, mesmo durante as reversões de corrente da ponte de diodo. Por fim, o resistor desempenha a importante função de regular a intensidade da corrente que flui pelo circuito, permitindo um controle preciso da luminosidade do LED. Dessa forma, o LED permanece constantemente iluminado, enquanto o restante do circuito opera em corrente alternada.
+  
+# Schemas PCB do circuito
+  
+![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/pcb-Ponte1.png?raw=true)
+  
+![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/pcbPonte2.png?raw=true)
+  
