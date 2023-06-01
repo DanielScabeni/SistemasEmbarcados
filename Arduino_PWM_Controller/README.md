@@ -139,7 +139,13 @@ void loop() {
 
 - O programa aguarda um pequeno intervalo de tempo definido pela função delay(50) antes de repetir o loop.
 #
-- Resumindo, esse código permite controlar a velocidade do motor através do botão, onde cada pressionamento aumenta a velocidade em um valor específico. O valor da velocidade é ajustado de forma incremental e limitado ao valor máximo. O uso do PWM (através da função `
+- Resumindo, esse código permite controlar a velocidade do motor através do botão, onde cada pressionamento aumenta a velocidade em um valor específico. O valor da velocidade é ajustado de forma incremental e limitado ao valor máximo. O uso do PWM (através da função 
+  
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+  
+<p align="center"> <img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" alt="DanielScabeni" /></p> 
+  
+
 
 
  
