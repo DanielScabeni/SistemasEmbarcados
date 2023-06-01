@@ -33,8 +33,7 @@
 - É uma das configurações mais comuns e eficientes para a retificação de corrente alternada, permitindo obter uma retificação de onda completa. Ela é amplamente utilizada em diversas aplicações que requerem a conversão de AC para DC, como fontes de alimentação, carregadores de bateria, inversores de frequência, entre outros.
 
 - A ponte de diodos consiste em quatro diodos retificadores (geralmente diodos de junção PN) conectados em uma configuração específica. Dois diodos são dispostos em série com a polaridade reversa, formando um lado da ponte, e os outros dois diodos são dispostos em série com a polaridade direta, formando o outro lado da ponte. Os pontos de junção dos diodos formam os terminais de saída da ponte, onde é obtida a corrente contínua retificada.
-
-Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configuração em ponte permite que a corrente seja retificada em ambos os semiciclos da onda, resultando em uma corrente contínua de polaridade constante na saída.
+  Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configuração em ponte permite que a corrente seja retificada em ambos os semiciclos da onda, resultando em uma corrente contínua de polaridade constante na saída.
 
 - A ponte de diodos oferece diversas vantagens, como uma retificação completa da corrente alternada, maior eficiência em relação a outros tipos de retificadores e facilidade de implementação. Ela se tornou uma solução padrão para retificação de corrente alternada em uma ampla gama de aplicações eletrônicas.
 
@@ -58,7 +57,7 @@ Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configu
 - Resistor (R1): é um componente eletrônico que limita o fluxo de corrente em um circuito. Ele desempenha diversas funções, como controlar a intensidade da corrente, ajustar a tensão, dividir a tensão e polarizar transistores.
   
 - LED: Um diodo emissor de luz
-  
+#
 - **Dessa maneira.** O conector desempenha o papel de fornecer energia elétrica ao circuito. A ponte de diodo é responsável por transformar a corrente alternada gerada em corrente contínua, garantindo uma fonte de energia estável. Os capacitores são utilizados estrategicamente para manter o LED aceso de forma contínua, mesmo durante as reversões de corrente da ponte de diodo. Por fim, o resistor desempenha a importante função de regular a intensidade da corrente que flui pelo circuito, permitindo um controle preciso da luminosidade do LED. Dessa forma, o LED permanece constantemente iluminado, enquanto o restante do circuito opera em corrente alternada.
   
 # PCB do circuito
