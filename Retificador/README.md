@@ -61,22 +61,32 @@ Quando a corrente alternada é aplicada à entrada da ponte de diodos, a configu
   
 - **Dessa maneira.** O conector desempenha o papel de fornecer energia elétrica ao circuito. A ponte de diodo é responsável por transformar a corrente alternada gerada em corrente contínua, garantindo uma fonte de energia estável. Os capacitores são utilizados estrategicamente para manter o LED aceso de forma contínua, mesmo durante as reversões de corrente da ponte de diodo. Por fim, o resistor desempenha a importante função de regular a intensidade da corrente que flui pelo circuito, permitindo um controle preciso da luminosidade do LED. Dessa forma, o LED permanece constantemente iluminado, enquanto o restante do circuito opera em corrente alternada.
   
-# Schemas PCB do circuito
+# PCB do circuito
   
 ![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/pcb-Ponte1.png?raw=true)
 
-  # Circuito no TinkerCad
+# Montagem do circuito em uma protoboard representado no TinkerCad
   
 ![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/RetTink1.png?raw=true)
 
-  # Circuito montado
+# Circuito montado em uma Protoboard
 
-![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/CircRet1.png?raw=true)
+![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/CircRet1.jpeg?raw=true)
   
-  # Circuito com um divisor de tansao
-![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/RetTink1.png?raw=true)
+# Divisor de tensão
 
-  # Implementação na placa montada
+<h3>
+  <p> 
+    A parte final do exercicio consistia em implementar nesse circuito um divisor de tensão
+  <p/>
+</h3>
+
+Um divisor de tensão é um circuito utilizado para obter uma fração de uma tensão de entrada maior. Ele consiste em dois resistores ligados em série entre a fonte de tensão e o terra, com um ponto de conexão entre eles. A tensão de saída é obtida nesse ponto de conexão.
+  
+# Circuito com um divisor de tensão
+![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/RetTink2.png?raw=true)
+
+# Implementação do divisor de tensão na protboard
   
 ![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/CircRet2.png?raw=true)
   
