@@ -90,3 +90,7 @@ Um divisor de tensão é um circuito utilizado para obter uma fração de uma te
   
 ![image](https://github.com/DanielScabeni/SistemasEmbarcados/blob/main/Retificador/schematics/CircRet2.png?raw=true)
   
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+  
+<p align="center"> <img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" alt="DanielScabeni" /></p> 
+  
